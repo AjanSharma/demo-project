@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'jenkins-slave-label'
+    }
     
     environment {
         JAVA_HOME = tool 'jdk17'
